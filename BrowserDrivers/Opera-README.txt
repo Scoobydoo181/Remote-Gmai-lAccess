@@ -1,0 +1,1 @@
+*Try using operadriver.exe as a ChromeDriver() because the new verisons of Opera are based on Chromium.
