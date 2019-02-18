@@ -63,6 +63,8 @@ public class UserInterface
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		in.close();
 	}
 	
 	

@@ -68,10 +68,21 @@ public class WebAccess extends Thread
 		}
 		
 		
-		driver.get("https://accounts.google.com//signin//v2//identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
-		WebElement userField = driver.findElement(By.name("identifier"));
+		driver.get("https://www.google.com/gmail/about/");
+		try
+		{
+			Thread.sleep(5000);
+		} 
+		catch (InterruptedException e1)
+		{
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		driver.findElement(By.className("gmail-nav__nav-link gmail-nav__nav-link__sign-inA")).click();
+		
+		WebElement userField = driver.findElement(By.className("whsOnd zHQkBf"));
 		userField.sendKeys(userName);
-		driver.findElement(By.name("identifierNext")).click();
+		driver.findElement(By.className("U26fgb O0WRkf zZhnYe e3Duub C0oVfc nDKKZc DL0QTb M9Bg4d")).click();
 		
 		try
 		{
