@@ -11,7 +11,7 @@ import org.openqa.selenium.WebElement;
 public class WebAccess extends Thread
 {
 	private Browsers browserType;
-	private String driverLocation;
+	//private String driverLocation;
 	private String userName;
 	private String password;
 	
@@ -19,7 +19,7 @@ public class WebAccess extends Thread
 	{
 		super(threadName);
 		this.browserType = browserType;
-		driverLocation = this.browserType.getLocation();
+		//driverLocation = this.browserType.getLocation();
 	}
 	
 	public String getUserName()
@@ -75,7 +75,7 @@ public class WebAccess extends Thread
 		} 
 		catch (InterruptedException e1)
 		{
-			// TODO Auto-generated catch block
+			
 			e1.printStackTrace();
 		}
 		driver.findElement(By.className("gmail-nav__nav-link gmail-nav__nav-link__sign-inA")).click();

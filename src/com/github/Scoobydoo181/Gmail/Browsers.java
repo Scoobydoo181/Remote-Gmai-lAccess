@@ -2,11 +2,11 @@ package com.github.Scoobydoo181.Gmail;
 
 public enum Browsers
 {
-	CHROME("C:\\Users\\scoob\\OneDrive\\Documents\\Programming Projects\\Java\\GithubProjects\\RemoteGmailAccess\\BrowserDrivers\\chromedriver.exe","webdriver.chrome.driver"),
-	IE("C:\\Users\\scoob\\OneDrive\\Documents\\Programming Projects\\Java\\GithubProjects\\RemoteGmailAccess\\BrowserDrivers\\IEDriverServer.exe","webdriver.ie.driver"),
-	EDGE("C:\\Users\\scoob\\OneDrive\\Documents\\Programming Projects\\Java\\GithubProjects\\RemoteGmailAccess\\BrowserDrivers\\MicrosoftWebDriver.exe","webdriver.edge.driver"),
-	FIREFOX("C:\\Users\\scoob\\OneDrive\\Documents\\Programming Projects\\Java\\GithubProjects\\RemoteGmailAccess\\BrowserDrivers\\geckodriver.exe","webdriver.firefox.driver"),
-	OPERA("C:\\Users\\scoob\\OneDrive\\Documents\\Programming Projects\\Java\\GithubProjects\\RemoteGmailAccess\\BrowserDrivers\\operadriver.exe","webdriver.opera.driver");
+	CHROME("BrowserDrivers\\chromedriver.exe","webdriver.chrome.driver"),
+	IE("BrowserDrivers\\IEDriverServer.exe","webdriver.ie.driver"),
+	EDGE("BrowserDrivers\\MicrosoftWebDriver.exe","webdriver.edge.driver"),
+	FIREFOX("BrowserDrivers\\geckodriver.exe","webdriver.firefox.driver"),
+	OPERA("BrowserDrivers\\operadriver.exe","webdriver.opera.driver");
 	
 	private String fileLocation;
 	private String sysProperty;
